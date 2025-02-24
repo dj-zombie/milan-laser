@@ -19,3 +19,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+nextjs-portal {
+  display: none;
+}
+
+@theme {
+  --color-milan: #0088AB;
+  --color-milan-secondary: #00A5B4;
+}
