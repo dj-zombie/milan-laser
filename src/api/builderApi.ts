@@ -2,7 +2,7 @@ const BASE_URL = 'https://cdn.builder.io/api/v3/content'; // Replace with the ac
 
 export const fetchLocations = async () => {
   try {
-    const response = await fetch(`${BASE_URL}/locations?apiKey=498d9c2c0b6f474c9bc9e2778b114199`);
+    const response = await fetch(`${BASE_URL}/locations?apiKey=${process.env.NEXT_PUBLIC_BUILDER_API_KEY}`);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }

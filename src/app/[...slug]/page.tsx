@@ -10,7 +10,7 @@ import ErrorMessage from '../../components/ErrorMessage';
 import '../../builder-registry';
 
 // Initialize builder
-reactBuilder.init('498d9c2c0b6f474c9bc9e2778b114199');
+reactBuilder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
 
 interface Params {
   slug: string[];

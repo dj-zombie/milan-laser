@@ -13,7 +13,7 @@ export function RenderContent({ content }: RenderContentProps) {
   const isPreviewing = useIsPreviewing();
 
   React.useEffect(() => {
-    require('@builder.io/react').builder.init('498d9c2c0b6f474c9bc9e2778b114199');
+    require('@builder.io/react').builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
     setMounted(true);
   }, []);
 
